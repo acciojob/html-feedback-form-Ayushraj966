@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+    }
+    form {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, button {
+      margin-top: 5px;
+      width: 100%;
+      padding: 8px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<label for="name">Name</label>
-	<input type="text" id="name" name="username" maxlength="50" minlength="3" required>
-	<br>
-	<br>
-	<label for="portfolio">Portfolio</label>
-	<input type="url" id="portfolio" name="Portfolio" required>
-	<br><br>
-	
-	<label for="favColor">Favorite Color</label>
-	<input type="color" id="favColor" name="Favorite Color">
-	<br>
-	<br>
-	
-	<label for="likeness">Likeness</label>
-	<input type="range" id="likeness" name="Likeness" min="1" max= "100">
-	<br>
-	<br>
 
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>Feedback Form</h1>
 
-</body>
+  <form action="#" method="post">
+    
+    <label for="name">Name</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      minlength="3" 
+      maxlength="50" 
+      required
+    >
 
-</html>
+    <label for="portfolio">Portfolio</label>
+    <input 
+      type="url" 
+      id="portfolio" 
+      name="portfolio" 
+      required
+    >
+
+    <label for="favColor">Favorite Color</label>
+    <input 
+      type="color" 
+      id="favColor" 
+      name="favColor" 
+      required
